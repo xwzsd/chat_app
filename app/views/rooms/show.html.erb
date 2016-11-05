@@ -1,18 +1,23 @@
 <h1>Chat app</h1>
-
-<% if user_signed_in? %>
-  <li>
-  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-  </li>
-<% else %>
-  <li>
-  <%= link_to('Login', new_user_session_path)  %>
-  </li>
-<% end %>
+<h5>Users list online</h5>
 <div id="users">
-  <%= render @users %>
+  <ul>
+    <li ><%= render User.where('last_seen > ?', 5.minutes.ago) %></li>
+  </ul>
 </div>
 
 <div id="messages">
   <%= render @messages %>
+</div>
+
+<div class="footer">
+  <div class="user-menu">
+    <span class="user-menu_profile-pic"></span><span class="user-menu_username"><%= current_user.email %></span>
+    <span class="connection_status">online</span>
+    <span class="logout"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></span>
+  </div>
+  <div class="input-box">
+    <input type="text" class="input-box_text" id="message_input" placeholder="Put your text here and press Enter" />
+  </div>
+
 </div>

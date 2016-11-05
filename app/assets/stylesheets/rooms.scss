@@ -1,3 +1,111 @@
 // Place all the styles related to the rooms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+footer {
+  display: block;
+}
+
+li {
+    list-style-type: none;
+    display: list-item;
+}
+
+ul {
+ list-style-type: square;
+ list-style-position: outside;
+}
+
+.login {
+  text-align: center;
+}
+
+.signup {
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 64px;
+  width: 100%;
+}
+
+#users {
+  float: left;
+}
+
+.user-menu {
+  float: left;
+  width: 220px;
+  height: 100%;
+  cursor: pointer;
+  background: #3e313c;
+  border-top: 2px solid #372c36;
+  padding: 7px 0 9px 8px;
+  height: 4rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+
+.user-menu_username {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #ffffff;
+  font-weight: 900;
+  line-height: 1.5rem;
+  margin-top: 0.2rem;
+  max-width: 120px;
+}
+.user-menu_profile-pic {
+  display: inline-block;
+  float: left;
+  border-radius: 0.2rem;
+  width: 20px;
+  height: 20px;
+  background-image: url(http://findicons.com/icon/download/118070/status/16/ico);
+  background-size: cover;
+  margin-right: 8px;
+}
+
+#messages {
+  float: right;
+  margin-right: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.connection_status {
+  color: #ab9ba9;
+}
+
+.message_content {
+  color: #2c2d30;
+  display: block;
+  min-height: 1rem;
+}
+
+.input-box {
+  height: 100%;
+  margin-left: 220px;
+}
+
+.input-box_text {
+  font-size: 0.95rem;
+  width: 90%;
+  margin-left: 2%;
+  margin-bottom: auto;
+  line-height: 1.2rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 0.2rem;
+  background-clip: padding-box;
+  color: #3d3c40;
+  box-shadow: none;
+  outline: 0;
+  bottom: 0;
+  min-height: 41px !important;
+  padding: 9px 5px 9px 8px;
+}

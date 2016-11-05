@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'devise'
+gem 'devise_lastseenable'
 gem 'omniauth-facebook'
 gem 'omniauth-vkontakte'
 

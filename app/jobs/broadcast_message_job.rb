@@ -7,6 +7,6 @@ class BroadcastMessageJob < ApplicationJob
 
   private
   def render_message(message)
-    ApplicationController.render.render message
+    ApplicationController.renderer.render message
   end
 end
