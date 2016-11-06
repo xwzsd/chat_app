@@ -72,10 +72,10 @@ ul {
 }
 
 #messages {
-  float: right;
-  margin-right: 600px;
+  margin-left: 250px;
+  max-height: 450px;
+  max-width: 700px;
   overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .connection_status {

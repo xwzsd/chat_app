@@ -1,11 +1,12 @@
-<div class="message">
-  <a href="" class=""></a>
-  <a href="" class="message_username"><%= message.user.email %></a>
-  <span class=""></span>
-  <span class="message_content">
-    <%= message.content %>
-  </span>
-  <span class="message_timestamp">
-    <%= message.created_at %>
-  </span>
+<div class="card">
+  <div class="card-block">
+    <a href="" class="message_username"><%= message.user.email %></a>
+    <span class="message_content">
+      <%= message.content %>
+    </span>
+    <span class="message_timestamp">
+      <%= message.created_at %>
+    </span>
+  </div>
 </div>
+
