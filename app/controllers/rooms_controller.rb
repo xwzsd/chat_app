@@ -1,6 +1,6 @@
 class RoomsController < ApplicationController
   def show
-    @users = User.all
+    @users = User.where('last_seen > ?', 5.minutes.ago)
     @messages = Message.all
   end
 end

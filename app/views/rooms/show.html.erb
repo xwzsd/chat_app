@@ -2,7 +2,7 @@
 <h5>Users list online</h5>
 <div id="users">
   <ul>
-    <li ><%= render User.where('last_seen > ?', 5.minutes.ago) %></li>
+    <li><%= render @users %></li>
   </ul>
 </div>
 
